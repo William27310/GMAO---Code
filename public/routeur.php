@@ -10,13 +10,11 @@ $parts = explode('/', $url);
 switch ($parts[0]) {
 
     case 'home':
-    $controller = new HomeController();
-    $controller->index();
-    break;
+        $controller = new HomeController();
+        $controller->index();
+        break;
 
+    default:
+        echo "Page non trouvée (404)";
+        break;
 }
-
-
-
-
-?>
