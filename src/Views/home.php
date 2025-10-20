@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Home</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=person" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -13,26 +13,27 @@
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
-<body>
+<?php require_once __DIR__ . "/../Views/templates/navbar.php" ?>
 
-    <nav class="navbar d-flex align-items-center justify-content-between">
-        <div class="container p-2 bg-body-tertiary border border-dark rounded navigateur">
+<body class="min-vh-100">
 
-            <a class="navbar-brand fw-bold ms-2">GMAO</a>
-            <div class="d-flex gap-4">
-                <div>
-                    <a href="index.php?url=profil" type="button" class="text-decoration-none btn btn-outline-dark d-flex flex-column align-items-center">
-                        <span class="material-symbols-outlined">
-                            person
-                        </span>
-                        <small>person</small>
-                    </a>
-                </div>
-                <button class="btn btn-outline-dark p-3 rounded">Fr</button>
+    <div class="d-flex justify-content-around flex-wrap mt-5 mb-5 container">
+        <div class="card mt-5" style="width: 18rem;">
+            <img src="upload/img_personun.png" class="card-img-top border border-dark" alt="...">
+            <div class="card-body text-center border border-dark">
+                <h5 class="card-title mb-3">Nom - Compte</h5>
+                <a href="#" class="btn btn-primary">Se connecter</a>
             </div>
-
         </div>
-    </nav>
+
+        <div class="card mt-5" style="width: 18rem;">
+            <img src="upload/img_personadd.png" class="card-img-top border border-dark" alt="...">
+            <div class="card-body text-center border border-dark">
+                <h5 class="card-title mb-3">Utilisateur</h5>
+                <a href="#" class="btn btn-primary">Créer un compte</a>
+            </div>
+        </div>
+    </div>
 
 </body>
 
