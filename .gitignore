@@ -1,0 +1,42 @@
+# Ignorer le dossier vendor/ (dépendances Composer)
+vendor/
+
+# Ignorer les fichiers d'environnement
+.env
+.env.local
+.env.*.local
+
+# Ignorer les logs et fichiers temporaires
+*.log
+*.cache
+*.tmp
+.cache/
+tmp/
+logs/
+
+# Ignorer les fichiers de configuration d'IDE
+# (VS Code, PhpStorm, NetBeans, etc.)
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Ignorer les fichiers système
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Ignorer les fichiers de test ou de couverture de code
+coverage/
+phpunit.xml.cache
+
+# Ignorer les fichiers de compilation (si utilisés)
+node_modules/
+dist/
+build/
+
+# Ignorer les fichiers de lock spécifiques à d'autres OS
+composer.lock
+
+# Si tu utilises Laravel ou Symfony, on peut adapter
+# ce fichier en conséquence — dis-moi si c’est le cas
