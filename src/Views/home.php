@@ -22,7 +22,7 @@
             <img src="upload/person.png" class="card-img-top border border-dark" alt="...">
             <div class="card-body text-center border border-dark">
                 <h5 class="card-title mb-3">Nom - Compte</h5>
-                <a href="#" class="btn btn-primary">Se connecter</a>
+                <a href="index.php?url=login" class="btn btn-primary">Se connecter</a>
             </div>
         </div>
 
@@ -30,7 +30,7 @@
             <img src="upload/person_add.png" class="card-img-top border border-dark" alt="...">
             <div class="card-body text-center border border-dark">
                 <h5 class="card-title mb-3">Utilisateur</h5>
-                <a href="#" class="btn btn-primary">Créer un compte</a>
+                <a href="index.php?url=register" class="btn btn-primary">Créer un compte</a>
             </div>
         </div>
     </div>
