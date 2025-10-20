@@ -122,3 +122,108 @@ db = Serveur MySQL = Port 3306, nom db dans le réseau Docker
 phpmyadmin = Interface graphique pour gérer MySQL = http://localhost:8081
 
 ==
+
+==========================================================================================================================================
+
+Le nom .gitignore + ce qu’il y a à l’intérieur sont tous les deux importants, mais c’est le contenu qui déclenche l’action.
+
+🔹 1. Le nom .gitignore
+
+Ce nom spécial est reconnu par Git.
+
+Il doit être écrit exactement .gitignore (pas gitignore.txt, ni ignore.git, etc.).
+
+Il indique à Git : « voici une liste de fichiers ou dossiers à ignorer. »
+
+🔹 2. Le contenu du fichier
+
+C’est le contenu qui définit ce que Git doit ignorer.
+
+Exemples :
+
+vendor/        # ignore tout le dossier vendor
+.env           # ignore le fichier .env
+*.log          # ignore tous les fichiers .log
+*.cache        # ignore tous les fichiers .cache
+
+
+Donc si ton .gitignore est vide, il ne fait rien — même si le fichier s'appelle correctement.
+
+📌 Important :
+
+Git n’ignore que les fichiers non encore suivis.
+
+Si un fichier est déjà suivi par Git, le .gitignore ne va pas le faire disparaître tout seul.
+
+Pour l’ignorer ensuite :
+git rm --cached fichier-a-ignorer
+
+
+Puis Git commencera à l’ignorer comme prévu.
+
+🧪 Test simple :
+
+Crée un fichier .gitignore
+
+Ajoute :
+
+test.txt
+
+
+Crée un fichier test.txt dans le même dossier
+
+Fais git status
+
+➜ Tu verras que Git ne te propose pas d’ajouter test.txt, car il est ignoré.
+
+==========================================================================================================================================
+
+🔍 Décryptage de ton composer.json :
+{
+  "name": "stagiaire/docker-gmao",
+
+
+Le nom du package (format : vendor/project)
+
+Ici : le développeur est stagiaire, le projet s'appelle docker-gmao
+
+  "autoload": {
+    "psr-4": {
+      "App\\": "src/"
+    }
+  },
+
+
+Autoload PSR-4 : configuration de chargement automatique des classes.
+
+Signifie que toutes les classes avec le namespace App\ seront cherchées dans le dossier src/
+
+Ex : App\Controllers\LoginController → fichier attendu : src/Controllers/LoginController.php
+
+💡 N'oublie pas de lancer composer dump-autoload après avoir modifié cette section.
+
+  "authors": [
+    {
+      "name": "William",
+      "email": "william.27@free.fr"
+    }
+  ],
+
+
+Infos sur l’auteur (utile surtout pour publier un package ou documenter)
+
+  "require": {}
+
+
+Liste des dépendances obligatoires pour ton projet.
+
+Vide pour l’instant, donc tu n’utilises pas encore de librairies externes.
+
+Si tu installes par exemple Guzzle :
+
+composer require guzzlehttp/guzzle
+
+
+Il sera ajouté ici automatiquement.
+
+==========================================================================================================================================
