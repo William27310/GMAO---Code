@@ -19,7 +19,7 @@
 
     <div class="d-flex justify-content-around flex-wrap mt-5 mb-5 container">
         <div class="card mt-5" style="width: 18rem;">
-            <img src="upload/img_personun.png" class="card-img-top border border-dark" alt="...">
+            <img src="upload/person.png" class="card-img-top border border-dark" alt="...">
             <div class="card-body text-center border border-dark">
                 <h5 class="card-title mb-3">Nom - Compte</h5>
                 <a href="#" class="btn btn-primary">Se connecter</a>
@@ -27,7 +27,7 @@
         </div>
 
         <div class="card mt-5" style="width: 18rem;">
-            <img src="upload/img_personadd.png" class="card-img-top border border-dark" alt="...">
+            <img src="upload/person_add.png" class="card-img-top border border-dark" alt="...">
             <div class="card-body text-center border border-dark">
                 <h5 class="card-title mb-3">Utilisateur</h5>
                 <a href="#" class="btn btn-primary">Créer un compte</a>
