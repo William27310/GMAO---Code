@@ -19,7 +19,7 @@
 
     <div class="container mt-5">
         <div class="row justify-content-center">
-            <div class="bg-secondary-subtle rounded border border-dark col-10">
+            <div class="bg-secondary-subtle rounded border border-dark col-10 mb-5">
                 <div class="text-center mt-5">
                     <h1>Inscrivez-vous !</h1>
                 </div>
@@ -61,7 +61,7 @@
                                 <label for="inputPassword" class="form-label">Mot de passe</label>
                                 <span class="text-danger text-end">Mot de passe manquant !</span>
                             </div>
-                            <input type="text" class="form-control" placeholder="Email" aria-label="Email">
+                            <input type="text" class="form-control" placeholder="Password" aria-label="Password">
                         </div>
 
                         <!-- Qualité -->
@@ -84,6 +84,11 @@
                         </div>
                     </div>
 
+
+                        <div class="d-flex justify-content-around mb-5">
+                            <a href="" class="btn btn-outline-dark">S'inscrire</a>
+                            <a href="index.php?url=home" class="btn btn-outline-dark">Retour</a>
+                        </div>
 
                 </form>
             </div>
