@@ -15,35 +15,26 @@
 
 <body>
 
-    <nav class="navbar align-items-center justify-content-between d-none d-md-flex navigateur">
-        <a class="navbar-brand fw-bold ms-5 text-white">GMAO</a>
-        <div class="d-flex gap-4 mx-5">
-            <div>
-                <a href="index.php?url=profil" type="button" class="bouton text-white text-decoration-none btn btn-outline-light d-flex flex-column align-items-center">
-                    <i class="bi bi-person-circle"></i>
-                    <small>person</small>
-                </a>
-            </div>
-            <button class="btn btn-outline-light p-3 rounded text-white bouton">Fr</button>
-        </div>
-    </nav>
-
-    <nav class="navbar d-block d-sm-none bg-body-tertiary navbar-dark fixed-top navigateur">
-        <div class="container-fluid">
-            <a class="navbar-brand fw-bold text-white" href="#">GMAO</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+    <nav class="navbar navbar-expand-md navigateur" data-bs-theme="dark">
+        <div class="container-fluid align-items-center justify-content-between">
+            <a class="navbar-brand fw-bold ms-3 text-white" href="#">GMAO</a>
+            <button class="navbar-toggler me-3" type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navMenu"
+                aria-controls="navMenu"
+                aria-expanded="false"
+                aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="offcanvas offcanvas-end navigateur" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-                <div class="offcanvas-header">
-                    <h5 class="offcanvas-title fw-bold text-white" id="offcanvasNavbarLabel">GMAO</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                </div>
-                <div class="offcanvas-body">
-                    <hr class="text-white">
-                    <p class="text-white"><span class="fw-bold">Langue : </span> Français</p>
-                    <p class="text-white">Retour au profil</p>
-                    <hr class="text-white">
+
+            <div class="collapse navbar-collapse" id="navMenu">
+                <div class="navbar-nav ms-auto d-flex align-items-center gap-3 me-3">
+                    <a class="bouton btn btn-outline-light nav-link text-white d-flex flex-column rounded align-items-center"
+                        href="index.php?url=profil">
+                        <i class="bi bi-person-circle"></i>
+                        <small>Person</small>
+                    </a>
+                    <button class="btn btn-outline-light text-white bouton">Fr</button>
                 </div>
             </div>
         </div>
