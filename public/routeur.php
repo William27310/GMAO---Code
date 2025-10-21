@@ -24,9 +24,19 @@ switch ($parts[0]) {
         $controller->register();
         break;
 
-    case 'forgot':
+    case 'continue':
         $controller = new UserController();
-        $controller->forgot();
+        $controller->continue();
+        break;
+
+    case 'forgotpw':
+        $controller = new UserController();
+        $controller->forgotpw();
+        break;
+
+    case 'forgotemail':
+        $controller = new UserController();
+        $controller->forgotemail();
         break;
 
     default:

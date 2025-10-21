@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Register</title>
+    <title>ForgotEmail</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -19,43 +19,38 @@
 
     <div class="container mt-5">
         <div class="row justify-content-center">
-            <div class="bg-secondary-subtle rounded col-8">
+            <div class="bg-secondary-subtle rounded border border-dark col-8">
                 <div class="text-center mt-5">
-                    <h1>Connectez-vous !</h1>
+                    <h3>Je ne parviens pas à retrouver mon email !</h1>
                 </div>
 
                 <form action="" method="post" class="mt-5">
 
                     <div class="row gap-1 justify-content-center mb-5">
 
-                        <!-- E-mail -->
-                        <div class="col-12 col-sm-6 col-md-6 mt-1">
+                        <!-- Nom -->
+                        <div class="col-12 col-sm-6 col-md-4">
                             <div class="d-flex justify-content-between">
-                                <label for="inputEmail" class="form-label">Email</label>
-                                <span class="text-danger text-end">Email manquant !</span>
+                                <label for="inputLastName" class="form-label">Nom</label>
+                                <span class="text-danger text-end">Nom manquant !</span>
                             </div>
-                            <input type="text" class="form-control" placeholder="Email" aria-label="Email">
+                            <input type="text" class="form-control" placeholder="Nom" aria-label="Nom">
                         </div>
 
-                        <!-- Mot de passe -->
-                        <div class="col-12 col-sm-6 col-md-6 mt-1">
+                        <!-- Prénom -->
+                        <div class="col-12 col-sm-6 col-md-4">
                             <div class="d-flex justify-content-between">
-                                <label for="inputPassword" class="form-label">Mot de passe</label>
-                                <span class="text-danger text-end">Mot de passe manquant !</span>
+                                <label for="inputFirstName" class="form-label">Prénom</label>
+                                <span class="text-danger text-end">Prénom manquant !</span>
                             </div>
-                            <input type="text" class="form-control" placeholder="Password" aria-label="Password">
-                            <a href="index.php?url=forgotpw">Mot de passe oublié ?</a>
+                            <input type="text" class="form-control" placeholder="Prénom" aria-label="Prénom">
                         </div>
-                    </div>
-                    <div class="d-flex justify-content-around mb-5">
-                        <a href="" class="btn btn-outline-dark">Se connecter</a>
-                        <a href="index.php?url=home" class="btn btn-outline-dark">Retour</a>
-                    </div>
 
                 </form>
             </div>
         </div>
     </div>
+
 
 </body>
 
