@@ -15,17 +15,17 @@
 
 <?php require_once __DIR__ . "/../Views/templates/navbar.php" ?>
 
-<body class="min-vh-100">
+<body class="min-vh-100 bg-secondary-subtle">
 
     <div class="container mt-5">
         <div class="row justify-content-center">
-            <div class="bg-secondary-subtle rounded col-8">
+            <div class="bg-light rounded col-8">
                 <div class="text-center mt-5">
                     <h1>Connectez-vous</h1>
                     <h4 class="text-danger mt-5"><?= $errors['login'] ?? "" ?></h3>
                 </div>
 
-                <form action="index.php?url=site" method="post" class="mt-5">
+                <form action="index.php?url=login" method="post" class="mt-5">
 
                     <div class="row gap-1 justify-content-center mb-5">
 

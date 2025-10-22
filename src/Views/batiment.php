@@ -34,9 +34,9 @@
                     <div class="card col-8 col-sm-4 col-md-4 mb-3">
                         <img src="..." class="card-img-top" alt="...">
                         <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
+                            <h5 class="card-title">Atelier 6</h5>
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                            <a href="index.php?url=atelier" class="btn btn-primary">Accéder à l'atelier</a>
                         </div>
                     </div>
 
@@ -45,7 +45,7 @@
                         <div class="card-body">
                             <h5 class="card-title">Card title</h5>
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                            <a href="index.php?url=home" class="btn btn-primary">Go somewhere</a>
                         </div>
                     </div>
                     <div class="card col-8 col-sm-4 col-md-4 mb-3">

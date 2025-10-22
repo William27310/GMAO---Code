@@ -15,11 +15,11 @@
 
 <?php require_once __DIR__ . "/../Views/templates/navbar.php" ?>
 
-<body class="min-vh-100">
+<body class="min-vh-100 bg-secondary-subtle">
 
     <div class="container mt-5">
         <div class="row justify-content-center">
-            <div class="bg-secondary-subtle rounded col-10 mb-5">
+            <div class="bg-light rounded col-10 mb-5">
                 <div class="text-center mt-5">
                     <h1>Inscrivez-vous !</h1>
                 </div>

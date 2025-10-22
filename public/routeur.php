@@ -25,6 +25,11 @@ switch ($parts[0]) {
         $controller->batiment();
         break;
 
+    case 'atelier':
+        $controller = new GmaoController();
+        $controller->atelier();
+        break;
+
     case 'login':
         $controller = new UserController();
         $controller->login();

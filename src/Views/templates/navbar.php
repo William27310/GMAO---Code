@@ -17,7 +17,7 @@
 
     <nav class="navbar navbar-expand-md navigateur" data-bs-theme="dark">
         <div class="container-fluid align-items-center justify-content-between">
-            <a class="navbar-brand fw-bold ms-3 text-white" href="#">GMAO</a>
+            <a class="navbar-brand fw-bold ms-3 text-white" href="index.php?url=home">GMAO</a>
             <button class="navbar-toggler me-3" type="button"
                 data-bs-toggle="collapse"
                 data-bs-target="#navMenu"

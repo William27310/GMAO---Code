@@ -15,7 +15,7 @@
 
 <?php require_once __DIR__ . "/../Views/templates/navbar.php" ?>
 
-<body class="min-vh-100">
+<body class="min-vh-100 bg-secondary-subtle">
 
     <div class="d-flex justify-content-around flex-wrap mt-5 mb-5 container">
         <div class="card mt-5" style="width: 18rem;">

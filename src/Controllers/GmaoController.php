@@ -13,4 +13,9 @@ class GmaoController
     {
         require_once __DIR__ . "/../Views/batiment.php";
     }
+
+        public function atelier()
+    {
+        require_once __DIR__ . "/../Views/atelier.php";
+    }
 }

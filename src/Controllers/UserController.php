@@ -7,14 +7,20 @@ class UserController
 {
     public function login()
     {
+        $errors = [];
+
 
         if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-            $errors = [];
 
             if (empty($_POST['login'])) {
                 $errors['login'] = 'Veuillez renseigner vos informations pour vous connectez';
             }
 
+            if (empty($errors)) {
+                // Authentification ou redirection
+                header("Location: index.php?url=site");
+                exit;
+            }
         }
 
         require_once __DIR__ . "/../Views/login.php";
@@ -61,6 +67,12 @@ class UserController
                 if (empty($_POST['quality'])) {
                     $errors['quality'] = "Veuillez renseigner votre qualité !";
                 }
+            }
+
+            if (empty($errors)) {
+                // Authentification ou redirection
+                header("Location: index.php?url=site");
+                exit;
             }
         }
         require_once __DIR__ . "/../Views/register.php";
