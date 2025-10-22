@@ -13,3 +13,41 @@
   background-color: hsl(235, 39%, 45%);
 }
 
+.atelier {
+  height: 400px;
+  overflow-y: auto;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.left_panel {
+  width: 40vw;
+  text-align: start;
+  height: 400px;
+  /* Hauteur fixe, adapte à ton besoin */
+  overflow-y: auto;
+  /* Active le scroll vertical */
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.left_panel::-webkit-scrollbar {
+  display: none;
+  /* Chrome, Safari, Edge */
+}
+
+@media (max-width: 767.98px) {
+  .left_panel,
+  .right_panel {
+    width: 100% !important; /* pleine largeur */
+    height: auto !important; /* hauteur automatique */
+  }
+  .left_panel {
+    max-height: 300px; /* optionnel, pour limiter la hauteur du scroll sur mobile */
+  }
+}
+
+.right_panel {
+  width: 50%;
+  height: auto;
+}

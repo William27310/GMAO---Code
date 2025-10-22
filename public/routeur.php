@@ -2,6 +2,7 @@
 
 use App\Controllers\UserController;
 use App\Controllers\HomeController;
+use App\Controllers\GmaoController;
 
 $url = $_GET['url'] ?? 'home';
 
@@ -12,6 +13,16 @@ switch ($parts[0]) {
     case 'home':
         $controller = new HomeController();
         $controller->index();
+        break;
+
+    case 'site':
+        $controller = new GmaoController();
+        $controller->site();
+        break;
+
+    case 'batiment':
+        $controller = new GmaoController();
+        $controller->batiment();
         break;
 
     case 'login':
