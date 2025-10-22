@@ -17,29 +17,33 @@
 
 <body class="min-vh-100 bg-secondary-subtle">
 
-    <div class="container mt-5 mb-5 col-11">
-        <div class="row bg-light justify-content-center gap-5">
-            <div class="border border-dark rounded">
+    <div class="d-flex justify-content-center">
+        <div class="mt-5 mb-2 col-11">
+            <div class="row bg-light justify-content-center gap-5 rounded">
                 <div class="text-center">
-                    <img src="upload/afpa.png" class="mt-3 mb-3 p-3" alt="">
-                    <h1>Site AFPA</h1>
+                    <div class="d-flex justify-content-between p-3">
+                        <div>
+                            <h1>Site AFPA</h1>
+                        </div>
+                        <a href="index.php?url=site" class="mt-5 btn btn-outline-dark">Revenir en arrière</a>
+                    </div>
                     <hr class="mt-3">
 
                     <!-- Rubrique -->
                     <div class="d-flex flex-column flex-md-row justify-content-around mb-5">
 
-                        <div class="right_panel card order-1 order-md-2 mt-3 mb-4">
+                        <div class="right_panel card order-1 order-md-2 mt-3 p-5 mb-4">
                             <h4 class="mt-5">Informations fixes</h4>
                             <p class="mt-4">Contenu affiché sur la partie gauche, sans scroll.</p>
-                            <p>Tu peux y mettre tout ce que tu veux, menus, infos, etc.</p>
+                            <p class="mb-5">Tu peux y mettre tout ce que tu veux, menus, infos, etc.</p>
                         </div>
 
-                        <div class="left_panel order-2 order-md-1">
+                        <div class="left_panel mt-3 order-2 order-md-1">
                             <div class="card me-3">
                                 <div class="card-body">
                                     <h5 class="card-title">Equipement</h5>
                                     <p class="card-text">Texte de la carte 1.</p>
-                                    <a href="index.php?url=batiment" class="btn btn-primary">Button</a>
+                                    <a href="" class="btn btn-primary">Button</a>
                                 </div>
                             </div>
 
@@ -89,8 +93,8 @@
                     <!-- Fin Rubrique -->
 
                 </div>
-            </div>
 
+            </div>
         </div>
     </div>
 
