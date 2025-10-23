@@ -31,9 +31,9 @@
                     <hr class="mt-3">
 
                     <div class="d-flex justify-content-around">
-                        <a href="index.php?url=intervention" class="btn btn-outline-dark">Créer une intervention</a>
-                        <a href="" class="btn btn-outline-dark">Renseigner une intervention</a>
-                        <a href="" class="btn btn-outline-dark">Historique des intervention</a>
+                        <a href="index.php?url=" class="btn btn-outline-dark">Renseigner une nouvelle machine</a>
+                        <a href="" class="btn btn-outline-dark">Modifier le renseignement</a>
+                        <a href="" class="btn btn-outline-dark">Supprimer le renseignement</a>
                     </div>
                     <hr>
 
@@ -101,11 +101,19 @@
                         </div>
                         <hr>
                     </div>
+
+                    <div class="d-flex justify-content-around mb-3">
+                        <a href="index.php?url=intervention" class="btn btn-outline-dark">Créer une intervention</a>
+                        <a href="" class="btn btn-outline-dark">Renseigner une intervention</a>
+                        <a href="" class="btn btn-outline-dark">Historique des intervention</a>
+                    </div>
                 </div>
 
             </div>
         </div>
     </div>
+
+
 
     <!-- Modal Image Cliquable -->
     <div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
