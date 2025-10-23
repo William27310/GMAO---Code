@@ -30,6 +30,31 @@ switch ($parts[0]) {
         $controller->atelier();
         break;
 
+    case 'machine':
+        $controller = new GmaoController();
+        $controller->machine();
+        break;
+
+    case 'sous_equipement':
+        $controller = new GmaoController();
+        $controller->sous_equipement();
+        break;
+
+    case 'intervention':
+        $controller = new GmaoController();
+        $controller->intervention();
+        break;
+
+    case 'bon_de_travail':
+        $controller = new GmaoController();
+        $controller->bon_de_travail();
+        break;
+
+    case 'compte_rendu':
+        $controller = new GmaoController();
+        $controller->compte_rendu();
+        break;
+
     case 'login':
         $controller = new UserController();
         $controller->login();

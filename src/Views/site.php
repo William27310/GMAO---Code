@@ -18,77 +18,89 @@
 <body class="min-vh-100 bg-secondary-subtle">
 
   <div class="d-flex justify-content-center">
-    <div class="mt-5 mb-2 col-11 rounded">
+    <div class="mt-2 mb-2 col-11 rounded">
       <div class="row bg-light justify-content-center gap-5 rounded">
-          <div class="text-center">
-            <img src="upload/afpa.png" class="mt-3 mb-3 p-3" alt="">
-            <h1>Site AFPA</h1>
-            <hr class="mt-3">
+        <div class="text-center">
+          <img src="upload/afpa.png" class="mt-3 mb-3 p-3" alt="">
+          <h1>Site AFPA</h1>
+          <hr class="mt-3">
 
-            <!-- Rubrique -->
-            <div class="d-flex flex-column flex-md-row justify-content-around mb-5">
+          <div class="d-flex justify-content-around">
+            <button class="btn btn-outline-dark">Créer</button>
+            <button class="btn btn-outline-dark">Modifier</button>
+            <button class="btn btn-outline-dark">Supprimer</button>
+          </div>
+          <hr>
 
-              <div class="right_panel card order-1 order-md-2 mt-3 p-5 mb-4">
-                <h4 class="mt-5">Informations fixes</h4>
-                <p class="mt-4">Contenu affiché sur la partie gauche, sans scroll.</p>
-                <p class="mb-5">Tu peux y mettre tout ce que tu veux, menus, infos, etc.</p>
+          <!-- Rubrique -->
+          <div class="d-flex flex-column flex-md-row justify-content-around mb-5">
+
+            <div class="right_panel card order-1 order-md-2 mt-3 p-5 mb-4">
+              <h4>Informations fixes</h4>
+              <div class="d-flex justify-content-around mt-3">
+                <p class="mt-3">Site-Nom <br>
+                  Site-Adresse <br>
+                  Site-Téléphone <br>
+                  Site-Siret <br>
+                  Site-CodePostal</p>
+              </div>
+            </div>
+
+            <div class="left_panel mt-3 order-2 order-md-1">
+              <div class="card me-3">
+                <div class="card-body">
+                  <h5 class="card-title">Batiment-Nom</h5>
+                  <p class="card-text">Numéro</p>
+                  <a href="index.php?url=batiment" class="btn btn-primary">Button</a>
+                </div>
               </div>
 
-              <div class="left_panel mt-3 order-2 order-md-1">
-                <div class="card me-3">
-                  <div class="card-body">
-                    <h5 class="card-title">Card title 1</h5>
-                    <p class="card-text">Texte de la carte 1.</p>
-                    <a href="index.php?url=batiment" class="btn btn-primary">Button</a>
-                  </div>
+              <div class="card me-3">
+                <div class="card-body">
+                  <h5 class="card-title">Card title 1</h5>
+                  <p class="card-text">Texte de la carte 1.</p>
+                  <a href="#" class="btn btn-primary">Button</a>
                 </div>
+              </div>
 
-                <div class="card me-3">
-                  <div class="card-body">
-                    <h5 class="card-title">Card title 1</h5>
-                    <p class="card-text">Texte de la carte 1.</p>
-                    <a href="#" class="btn btn-primary">Button</a>
-                  </div>
+              <div class="card me-3">
+                <div class="card-body">
+                  <h5 class="card-title">Card title 1</h5>
+                  <p class="card-text">Texte de la carte 1.</p>
+                  <a href="#" class="btn btn-primary">Button</a>
                 </div>
+              </div>
 
-                <div class="card me-3">
-                  <div class="card-body">
-                    <h5 class="card-title">Card title 1</h5>
-                    <p class="card-text">Texte de la carte 1.</p>
-                    <a href="#" class="btn btn-primary">Button</a>
-                  </div>
+              <div class="card me-3">
+                <div class="card-body">
+                  <h5 class="card-title">Card title 2</h5>
+                  <p class="card-text">Texte de la carte 2.</p>
+                  <a href="#" class="btn btn-primary">Button</a>
                 </div>
+              </div>
 
-                <div class="card me-3">
-                  <div class="card-body">
-                    <h5 class="card-title">Card title 2</h5>
-                    <p class="card-text">Texte de la carte 2.</p>
-                    <a href="#" class="btn btn-primary">Button</a>
-                  </div>
+              <div class="card me-3">
+                <div class="card-body">
+                  <h5 class="card-title">Card title 3</h5>
+                  <p class="card-text">Texte de la carte 3.</p>
+                  <a href="#" class="btn btn-primary">Button</a>
                 </div>
+              </div>
 
-                <div class="card me-3">
-                  <div class="card-body">
-                    <h5 class="card-title">Card title 3</h5>
-                    <p class="card-text">Texte de la carte 3.</p>
-                    <a href="#" class="btn btn-primary">Button</a>
-                  </div>
+              <div class="card me-3">
+                <div class="card-body">
+                  <h5 class="card-title">Card title 4</h5>
+                  <p class="card-text">Texte de la carte 4.</p>
+                  <a href="#" class="btn btn-primary">Button</a>
                 </div>
-
-                <div class="card me-3">
-                  <div class="card-body">
-                    <h5 class="card-title">Card title 4</h5>
-                    <p class="card-text">Texte de la carte 4.</p>
-                    <a href="#" class="btn btn-primary">Button</a>
-                  </div>
-                </div>
-
               </div>
 
             </div>
-            <!-- Fin Rubrique -->
 
           </div>
+          <!-- Fin Rubrique -->
+
+        </div>
 
       </div>
     </div>

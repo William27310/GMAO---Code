@@ -51,3 +51,21 @@
   width: 50%;
   height: auto;
 }
+
+.affichage {
+  width: 100%;
+}
+
+.sous_equipement {
+  width: 100%;
+}
+
+.image_se {
+height: auto;
+width: 800px;
+}
+
+.right_panel_two {
+  width: 25%;
+  height: auto;
+}
