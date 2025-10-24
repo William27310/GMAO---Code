@@ -27,7 +27,7 @@
                         <div>
                             <h1>Site AFPA</h1>
                         </div>
-                        <a href="index.php?url=machine" class="mt-5 btn btn-outline-dark">Revenir en arrière</a>
+                        <a href="index.php?url=intervention" class="mt-5 btn btn-outline-dark">Revenir en arrière</a>
                     </div>
                     <hr class="mt-3">
 
@@ -40,62 +40,63 @@
                                 <div class="col-12 col-sm-6 col-md-4">
                                     <div class="d-flex justify-content-between">
                                         <label for="inputLastName" class="form-label">Service</label>
-                                        <span class="text-danger text-end"><?= $errors[''] ?? "" ?></span>
+                                        <span class="text-danger text-end"><?= $errors['service'] ?? "" ?></span>
                                     </div>
-                                    <input type="text" class="form-control" name="service" value="<?= $_POST[''] ?? "" ?>" placeholder="Service">
+                                    <input type="text" class="form-control" name="service" value="<?= $_POST['service'] ?? "" ?>" placeholder="Service">
                                 </div>
 
                                 <!-- Nom -->
                                 <div class="col-12 col-sm-6 col-md-4">
                                     <div class="d-flex justify-content-between">
                                         <label for="inputFirstName" class="form-label">Nom</label>
-                                        <span class="text-danger text-end"><?= $errors[''] ?? "" ?></span>
+                                        <span class="text-danger text-end"><?= $errors['nom'] ?? "" ?></span>
                                     </div>
-                                    <input type="text" class="form-control" name="nom" value="<?= $_POST[''] ?? "" ?>" placeholder="Nom">
+                                    <input type="text" class="form-control" name="nom" value="<?= $_POST['nom'] ?? "" ?>" placeholder="Nom">
                                 </div>
 
                                 <!-- Destinataire -->
                                 <div class="col-12 col-sm-6 col-md-8 mt-1">
                                     <div class="d-flex justify-content-between">
                                         <label for="inputEmail" class="form-label">Destinataire</label>
-                                        <span class="text-danger text-end"><?= $errors[''] ?? "" ?></span>
+                                        <span class="text-danger text-end"><?= $errors['destinataire'] ?? "" ?></span>
                                     </div>
-                                    <input type="text" class="form-control" name="destinataire" value="<?= $_POST[''] ?? "" ?>" placeholder="Destinataire">
+                                    <input type="text" class="form-control" name="destinataire" value="<?= $_POST['destinataire'] ?? "" ?>" placeholder="Destinataire">
                                 </div>
 
                                 <!-- Machine -->
                                 <div class="col-12 col-sm-6 col-md-8 mt-1">
                                     <div class="d-flex justify-content-between">
                                         <label for="inputPassword" class="form-label">Machine</label>
-                                        <span class="text-danger text-end"><?= $errors[''] ?? "" ?></span>
+                                        <span class="text-danger text-end"><?= $errors['machine'] ?? "" ?></span>
                                     </div>
-                                    <input type="text" class="form-control" name="machine" value="<?= $_POST[''] ?? "" ?>" placeholder="Machine">
+                                    <input type="text" class="form-control" name="machine" value="<?= $_POST['machine'] ?? "" ?>" placeholder="Machine">
                                 </div>
 
                                 <!-- Objet -->
                                 <div class="col-12 col-sm-6 col-md-8 mt-1">
                                     <div class="d-flex justify-content-between">
                                         <label for="exampleFormControlTextarea1" class="form-label">Objet</label>
+                                        <span class="text-danger text-end"><?= $errors['objet'] ?? "" ?></span>
                                     </div>
-                                    <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Objet" rows="3" name="objet"></textarea>
+                                    <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Objet" rows="3" name="objet" value="<?= $_POST['objet'] ?? "" ?>"></textarea>
                                 </div>
 
                                 <!-- Délai -->
                                 <div class="col-12 col-sm-6 col-md-4">
                                     <div class="d-flex justify-content-between">
                                         <label for="inputLastName" class="form-label">Délai</label>
-                                        <span class="text-danger text-end"><?= $errors[''] ?? "" ?></span>
+                                        <span class="text-danger text-end"><?= $errors['delai'] ?? "" ?></span>
                                     </div>
-                                    <input type="text" class="form-control" name="delai" value="<?= $_POST[''] ?? "" ?>" placeholder="Délai">
+                                    <input type="text" class="form-control" name="delai" value="<?= $_POST['delai'] ?? "" ?>" placeholder="Délai">
                                 </div>
 
                                 <!-- Date de prévue -->
                                 <div class="col-12 col-sm-6 col-md-4">
                                     <div class="d-flex justify-content-between">
                                         <label for="inputFirstName" class="form-label">Date de prévue</label>
-                                        <span class="text-danger text-end"><?= $errors[''] ?? "" ?></span>
+                                        <span class="text-danger text-end"><?= $errors['date_de_prevue'] ?? "" ?></span>
                                     </div>
-                                    <input type="text" class="form-control" name="date_de_prevue" value="<?= $_POST[''] ?? "" ?>" placeholder="Date de prévue">
+                                    <input type="text" class="form-control" name="date_de_prevue" value="<?= $_POST['date_de_prevue'] ?? "" ?>" placeholder="Date de prévue">
                                 </div>
                             </div>
 

@@ -32,7 +32,7 @@
                     <hr class="mt-3">
 
                     <div class="container">
-                        <form action="index.php?url=intervention" method="post" class="mt-5">
+                        <form action="index.php?url=compte_rendu" method="post" class="mt-5">
 
                             <div class="row gap-1 justify-content-center mb-5">
 
@@ -78,7 +78,7 @@
                                     <input value="">
                                 </div>
 
-                                
+
                                 <div class="col-12 col-sm-6 col-md-4 mt-2">
                                     <div class="d-flex justify-content-between">
                                         <span class="fw-bold">Intervenants : Auto Modifiable</span>
@@ -87,39 +87,37 @@
                                 </div>
                             </div>
 
-                            <!-- Pièces détachées -->
                             <div class="row gap-1 justify-content-center mb-5">
-                                <!-- Service -->
+                                <!-- Arrêt de production -->
                                 <div class="col-12 col-sm-4 col-md-2">
                                     <div class="d-flex justify-content-between">
                                         <label for="inputLastName" class="form-label">Arrêt de production</label>
-                                        <span class="text-danger text-end"><?= $errors[''] ?? "" ?></span>
+                                        <span class="text-danger text-end"><?= $errors['arret'] ?? "" ?></span>
                                     </div>
-                                    <input type="text" class="form-control" name="service" value="<?= $_POST[''] ?? "" ?>" placeholder="Service">
+                                    <input type="text" class="form-control" name="arret" value="<?= $_POST['arret'] ?? "" ?>" placeholder="Arrêt de production">
                                 </div>
 
-                                <!-- Nom -->
+                                <!-- Durée d'intervention -->
                                 <div class="col-12 col-sm-4 col-md-2">
                                     <div class="d-flex justify-content-between">
                                         <label for="inputFirstName" class="form-label">Durée intervention</label>
-                                        <span class="text-danger text-end"><?= $errors[''] ?? "" ?></span>
+                                        <span class="text-danger text-end"><?= $errors['duree'] ?? "" ?></span>
                                     </div>
-                                    <input type="text" class="form-control" name="nom" value="<?= $_POST[''] ?? "" ?>" placeholder="Nom">
+                                    <input type="text" class="form-control" name="duree" value="<?= $_POST['duree'] ?? "" ?>" placeholder="duree">
                                 </div>
 
-                                <!-- Date de prévue -->
+                                <!-- Coût d'intervention -->
                                 <div class="col-12 col-sm-4 col-md-2">
                                     <div class="d-flex justify-content-between">
                                         <label for="inputFirstName" class="form-label">Coût intervention</label>
-                                        <span class="text-danger text-end"><?= $errors[''] ?? "" ?></span>
+                                        <span class="text-danger text-end"><?= $errors['cout'] ?? "" ?></span>
                                     </div>
-                                    <input type="text" class="form-control" name="date_de_prevue" value="<?= $_POST[''] ?? "" ?>" placeholder="Date de prévue">
+                                    <input type="text" class="form-control" name="cout" value="<?= $_POST['cout'] ?? "" ?>" placeholder="cout">
                                 </div>
                             </div>
 
-                            <!-- Début prévue -->
                             <div class="row gap-1 justify-content-center mb-5">
-                                <!-- Nom -->
+                                <!-- Date Début -->
                                 <div class="col-12 col-sm-6 col-md-4 mt-2">
                                     <div class="d-flex justify-content-between">
                                         <span class="fw-bold">Date début : Auto modifiable</span>
@@ -127,17 +125,18 @@
                                     <input value="">
                                 </div>
 
-                                                                <!-- Nom -->
+                                <!-- Date Fin -->
                                 <div class="col-12 col-sm-6 col-md-4 mt-2">
                                     <div class="d-flex justify-content-between">
                                         <span class="fw-bold">Date fin : SI LE COMPTE RENDU EST COMPLETER PLUS DE 1 JOUR</span>
                                     </div>
                                     <input value="">
                                 </div>
-                           </div>
+                            </div>
 
                             <div class="d-flex justify-content-around mb-5">
                                 <button type="submit" class="btn btn-outline-dark">Terminer le compte-rendu</button>
+                                <a href="index.php?url=machine" class="btn btn-outline-dark">Retour</a>
                             </div>
 
                         </form>
