@@ -31,32 +31,11 @@
                     <hr class="mt-3">
 
                     <div class="d-flex justify-content-around">
-                        <a href="index.php?url=" class="btn btn-outline-dark">Renseigner une nouvelle machine</a>
+                        <a href="index.php?url=create_machine" class="btn btn-outline-dark">Renseigner un nouveau équipement</a>
                         <a href="" class="btn btn-outline-dark">Modifier le renseignement</a>
                         <a href="" class="btn btn-outline-dark">Supprimer le renseignement</a>
                     </div>
                     <hr>
-
-                    <div class="d-flex justify-content-center">
-                        <div class="mt-4 mb-5">
-                            <p class="fw-bold">Documentation :</p>
-                            <img src="upload/afpa.png" alt="">
-                        </div>
-                    </div>
-                    <div class="d-flex justify-content-around">
-
-                        <div class="card col-8 col-sm-4 col-md-2 mb-3">
-                            <img src="upload/afpa.png" class="card-img-top" data-bs-toggle="modal" data-bs-target="#imageModal" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Equipement</h5>
-                                <p>Nom <br>
-                                    Fonctionnalité <br>
-                                    Type</p>
-                                <a href="index.php?url=sous_equipement" class="btn btn-outline-dark">Sous-équipement</a>
-                            </div>
-                        </div>
-                    </div>
-
 
                     <!-- Multiple Toggle -->
                     <p class="d-inline-flex gap-1">
@@ -102,6 +81,22 @@
                         <hr>
                     </div>
 
+                    <!-- Equipement -->
+                    <div class="d-flex justify-content-around">
+                        <div class="card col-8 col-sm-4 col-md-2 mb-3">
+                            <img src="upload/afpa.png" class="card-img-top" data-bs-toggle="modal" data-bs-target="#imageModal" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Equipement</h5>
+                                <p>Nom <br>
+                                    Fonctionnalité <br>
+                                    Type</p>
+                                <a href="index.php?url=sous_equipement" class="btn btn-outline-dark">Sous-équipement</a>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- Bouton -->
                     <div class="d-flex justify-content-around mb-3">
                         <a href="index.php?url=intervention" class="btn btn-outline-dark">Créer une intervention</a>
                         <a href="" class="btn btn-outline-dark">Renseigner une intervention</a>
@@ -112,8 +107,6 @@
             </div>
         </div>
     </div>
-
-
 
     <!-- Modal Image Cliquable -->
     <div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
@@ -129,6 +122,7 @@
         </div>
     </div>
     <!-- Modal -->
+
 </body>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>

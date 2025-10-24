@@ -37,7 +37,7 @@
                 <hr>
 
                 <h3 class="ms-5 mt-2">Les différents ateliers</h3>
-                <div class="row justify-content-around gap-5 mt-5 atelier">
+                <div class="row justify-content-around gap-5 mt-5 mb-5 atelier">
 
                     <div class="card col-8 col-sm-4 col-md-4 mb-3">
                         <img src="..." class="card-img-top" alt="...">

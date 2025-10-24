@@ -35,6 +35,11 @@ switch ($parts[0]) {
         $controller->machine();
         break;
 
+    case 'create_machine':
+        $controller = new GmaoController();
+        $controller->create_machine();
+        break;
+
     case 'sous_equipement':
         $controller = new GmaoController();
         $controller->sous_equipement();

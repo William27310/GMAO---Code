@@ -24,6 +24,54 @@ class GmaoController
         require_once __DIR__ . "/../Views/machine.php";
     }
 
+    public function create_machine()
+    {
+
+        if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+            $errors = [];
+
+            if (empty($_POST['nom'])) {
+                $errors['nom'] = "Veuillez rentrer un utilisateur.";
+            }
+
+            if (empty($_POST['marque'])) {
+                $errors['marque'] = "Veuillez rentrer une marque.";
+            }
+
+            if (empty($_POST['machine'])) {
+                $errors['machine'] = "Veuillez identifier la machine.";
+            }
+
+            if (empty($_POST['mise_en_service'])) {
+                $errors['mise_en_service'] = '<i class="bi bi-exclamation-lg"></i>';
+            }
+
+            if (empty($_POST['fin_de_garantie'])) {
+                $errors['fin_de_garantie'] = '<i class="bi bi-exclamation-lg"></i>';
+            }
+
+            if (empty($_POST['etat'])) {
+                $errors['etat'] = '<i class="bi bi-exclamation-lg"></i>';
+            }
+
+            if (empty($_POST['numero'])) {
+                $errors['numero'] = '<i class="bi bi-exclamation-lg"></i>';
+            }
+
+            if (isset($_POST['description'])) {
+                if (empty($_POST['description'])) {
+                    $errors['description'] = "Veuillez renseigner une description.";
+                }
+            }
+            if (empty($errors)) {
+                header("Location : index.php?url=machine");
+            }
+
+        }
+
+        require_once __DIR__ . "/../Views/create_machine.php";
+    }
+
     public function sous_equipement()
     {
         require_once __DIR__ . "/../Views/sous_equipement.php";
